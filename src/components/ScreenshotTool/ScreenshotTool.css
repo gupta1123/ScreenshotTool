@@ -1,0 +1,161 @@
+.main-container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.choose-file-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.image-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100% - 40px);
+  margin-top: 20px;
+}
+
+.options-container {
+  background-color: #fff;
+  height: 100%;
+  padding: 20px;
+}
+
+.options-container h2 {
+  margin-bottom: 20px;
+}
+
+.randomize-button-container {
+  margin-bottom: 20px;
+}
+
+.gradient-type-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.gradient-type-buttons button {
+  flex: 1;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.gradient-type-buttons button:last-child {
+  margin-right: 0;
+}
+
+.gradient-type-buttons button.active {
+  color: #fff;
+}
+
+.image-size-slider-container {
+  margin-bottom: 20px;
+}
+
+.shadow-toggle-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.shadow-toggle-container h3 {
+  flex: 1;
+  margin: 0;
+}
+
+.shadow-toggle-container label {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.shadow-toggle-container input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #69c4cf;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #69c4cf;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.shadow-slider-container {
+  margin-bottom: 20px;
+}
+
+.roundness-slider-container {
+  margin-bottom: 20px;
+}
+
+.modal-content {
+  border-radius: 20px;
+}
+
+.modal-header {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}

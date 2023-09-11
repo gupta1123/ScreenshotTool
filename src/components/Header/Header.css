@@ -1,0 +1,9 @@
+.navbar {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
